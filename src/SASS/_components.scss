@@ -1,0 +1,119 @@
+@import './core';
+
+.weather {
+    @include size(500px, max-content);
+    margin: 80px auto;
+
+    &>.input_data {
+        width: 100%;
+        margin: 0 auto;
+        @include flex(space-between);
+
+        &>.inputs {
+            display: flex;
+            gap: 30px;
+            position: relative;
+
+            &>.and{
+                position: absolute;
+                @include font(23px, 16px, 400);
+                top: 14px;
+                left: 114px;
+            }
+
+            &>input {
+                @include font(16px, 16px, 400);
+                @include size(30%, 30px);
+                background-color: #4F74FF;
+                color: #ffffff;
+                border: none;
+                outline: none;
+                border-radius: 7px;
+                padding: 5px;
+                border: 2px solid #4F74FF;
+                text-align: center;
+
+            }
+        }
+
+        &>.send_info{
+            @include font(16px, 16px, 400);
+            @include size(50%, 44px);
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease; 
+            border: 2px solid #a19f9f;
+            background-color: #fff;
+
+            &:hover{
+                background-color: #b6b7b9;
+                color: #fff;
+                border: 2px solid #b6b7b9;
+            }
+        }
+    }
+
+
+    &>.weather_result{
+        margin-top: 20px;
+        display: grid;
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
+
+        &>.weather_temperature{
+            background-color: #4F74FF;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+            padding: 0px 20px;
+            @include flex(space-between);
+            
+            &>.weather_temperature_left{
+                width: 50%;
+
+                &>.weather_name{
+                    @include font(24px, 24px, 400);
+                    color: #fff;
+                }
+
+                &>.weather_time{
+                    @include font(16px, 16px, 400);
+                    padding-top: 5px;
+                    color: #fff;
+                }
+            }
+
+            &>.weather_temperature_right{
+                width: 50%;
+
+                &>.weather_degree{
+                    float: right;
+                    @include font(80px, 80px, 600);
+                    color: #fff;
+                }
+            }
+        }
+
+        &>.weather_wind{
+            background: var(--bg-popup-default, #FFF);  
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
+            border-radius: 20px;
+            height: 100px;
+            @include flex(space-around);
+
+            &>.wind_item{
+                
+                &>h1{
+                    color: #aeb0b3;
+                    @include font(16px, 16px, 400);
+                }
+
+                &>h2{
+                    color: #000000;
+                    @include font(16px, 16px, 600);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

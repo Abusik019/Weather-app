@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="weather">
+            <div class="input_data">
+                <div class="inputs">
+                    <input type="text" id="weather-latitude" placeholder="Latitude">
+                    <h1 class="and">&</h1>
+                    <input type="text" id="weather-longitude" placeholder="Longitude">
+                </div>
+                <button class="send_info" id="send_info">Send</button>
+            </div>
+            <div class="weather_result">
+                <div class="weather_temperature">
+                    <div class="weather_temperature_left">
+                        <img id="weather_img" src="./img/rain.png" alt="weather">
+                        <div id="weather_name" class="weather_name">Heavy Rain</div>
+                        <div class="weather_time">Morning</div>
+                    </div>
+                    <div class="weather_temperature_right">
+                        <div id="weather_degree" class="weather_degree">0°</div>
+                    </div>
+                </div>
+                <div class="weather_wind">
+                    <div class="wind_item wind_temp">
+                        <h1 class="temp_title">Wind</h1>
+                        <h2 id="temp_data" class="temp_data">0 m/h</h2>
+                    </div>
+                    <div class="wind_item wind_direction">
+                        <h1 class="direction_title">Humidity</h1>
+                        <h2 id="direction_data" class="direction_data">0</h2>
+                    </div>
+                    <div class="wind_item wind_visibility">
+                        <h1 class="visibility_title">Visibility</h1>
+                        <h2 id="visibility_data" class="visibility_data">0</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="./scripts.js" type="module"></script>
+</body>
+</html>

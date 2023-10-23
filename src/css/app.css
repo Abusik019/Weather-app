@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+.weather {
+  width: 500px;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 80px auto;
+}
+.weather > .input_data {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather > .input_data > .inputs {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.weather > .input_data > .inputs > .and {
+  position: absolute;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  top: 14px;
+  left: 114px;
+}
+.weather > .input_data > .inputs > input {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  width: 30%;
+  height: 30px;
+  background-color: #4F74FF;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 5px;
+  border: 2px solid #4F74FF;
+  text-align: center;
+}
+.weather > .input_data > .send_info {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  width: 50%;
+  height: 44px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #a19f9f;
+  background-color: #fff;
+}
+.weather > .input_data > .send_info:hover {
+  background-color: #b6b7b9;
+  color: #fff;
+  border: 2px solid #b6b7b9;
+}
+.weather > .weather_result {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+.weather > .weather_result > .weather_temperature {
+  background-color: #4F74FF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather > .weather_result > .weather_temperature > .weather_temperature_left {
+  width: 50%;
+}
+.weather > .weather_result > .weather_temperature > .weather_temperature_left > .weather_name {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 24px;
+  color: #fff;
+}
+.weather > .weather_result > .weather_temperature > .weather_temperature_left > .weather_time {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  padding-top: 5px;
+  color: #fff;
+}
+.weather > .weather_result > .weather_temperature > .weather_temperature_right {
+  width: 50%;
+}
+.weather > .weather_result > .weather_temperature > .weather_temperature_right > .weather_degree {
+  float: right;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  line-height: 80px;
+  color: #fff;
+}
+.weather > .weather_result > .weather_wind {
+  background: var(--bg-popup-default, #FFF);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.weather > .weather_result > .weather_wind > .wind_item > h1 {
+  color: #aeb0b3;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+}
+.weather > .weather_result > .weather_wind > .wind_item > h2 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  margin-top: 10px;
+}/*# sourceMappingURL=app.css.map */
