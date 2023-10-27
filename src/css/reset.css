@@ -84,14 +84,14 @@ input, select {
 }
 
 ::-webkit-input-placeholder {
-    color: #dadde0; 
+    color: #00000097; 
  }
  :-moz-placeholder {
-    color: #dadde0; 
+    color: #00000097; 
  }
  ::-moz-placeholder { 
-    color: #dadde0; 
+    color: #00000097; 
  }
  :-ms-input-placeholder {
-    color: #dadde0; 
+    color: #00000097; 
  }

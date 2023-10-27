@@ -11,9 +11,10 @@ let visibility = document.getElementById('visibility_data');
 let weatherImg = document.getElementById('weather_img');
 
 sendInfo.addEventListener('click', async () => {
-    let lat = latitude.value;
-    let lon = longitude.value;
+    let lat = +latitude.value,
+        lon = +longitude.value;
 
-    getWeatherData(lat, lon, weatherName, weatherDegree, windSpeed, humidity, visibility, weatherImg)
+    if(lat && lon){
+        getWeatherData(lat, lon, weatherName, weatherDegree, windSpeed, humidity, visibility, weatherImg)
     }
-)
+});
