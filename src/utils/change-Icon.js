@@ -1,23 +1,20 @@
 const weatherState = {
-    'Clouds': '../src/img/cloud.png',
-    'Thunderstorm': '../src/img/storm.png',
-    'Drizzle': '../src/img/drizzle.png',
-    'Rain': '../src/img/rain.png',
-    'Clear': '../src/img/clear.svg',
-    'Snow': '../src/img/snow.png',
-    'Mist': '../src/img/fog.png',
-    'Smoke': '../src/img/fog.png',
-    'Haze': '../src/img/fog.png',
-    'Dust': '../src/img/fog.png',
-    'Fog': '../src/img/fog.png',
-    'Sand': '../src/img/fog.png',
-    'Ash': '../src/img/fog.png',
-    'Squall': '../src/img/fog.png',
-    'Tornado': '../src/img/fog.png',
+    'Clouds': './src/img/cloud.png',
+    'Thunderstorm': './src/img/storm.png',
+    'Drizzle': './src/img/drizzle.png',
+    'Rain': './src/img/rain.png',
+    'Clear': './src/img/clear.svg',
+    'Snow': './src/img/snow.png',
+    'Mist': './src/img/fog.png',
+    'Smoke': './src/img/fog.png',
+    'Haze': './src/img/fog.png',
+    'Dust': './src/img/fog.png',
+    'Fog': './src/img/fog.png',
+    'Sand': './src/img/fog.png',
+    'Ash': './src/img/fog.png',
+    'Squall': './src/img/fog.png',
+    'Tornado': './src/img/fog.png',
 }
-
-
-// import CloudsIcon from '../src/img/cloud.png';
 
 export default function changeIcon(res, weatherImg){
     for(let state in weatherState){
